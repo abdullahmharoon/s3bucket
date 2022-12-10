@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Statement1",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": [
+                    "arn:aws:iam::907416448857:root",
+                    "arn:aws:iam::907416448857:role/abdullah_rdsfullaccess"
+                ]
+            },
+            "Action": "s3:*",
+            "Resource": [
+                "arn:aws:s3:us-east-1:907416448857:accesspoint/glue019",
+                "arn:aws:s3:us-east-1:907416448857:accesspoint/glue019/object/*"
+            ]
+        }
+    ]
+}
